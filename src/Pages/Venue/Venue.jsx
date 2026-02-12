@@ -1,9 +1,8 @@
 import "./Venue.css"
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { faArrowUpRightFromSquare, faCamera, faCameraRetro } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { useNavigate } from "react-router-dom"; 
 import Section from "../../Components/Common/Section";
 
 export default function Venue() {
