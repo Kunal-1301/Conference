@@ -1,0 +1,44 @@
+.common-section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.common-section h3.section-title {
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.common-section h3.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.section-content.block {
+    display: block;
+    padding: 0; 
+}
+
+/* Specific adjustment for when there's only one item or few items to keep them centered/sized nicely */
+.section-content:has(> :nth-last-child(-n+2):first-child) {
+     /* Optional: strictly center if few items */
+     /* justify-content: center; */
+}

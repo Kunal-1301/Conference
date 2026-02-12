@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  color: white;
+}
+
+.headerTopImage {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.headTop {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.headerTopContent {
+  height: 100vh;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.headTop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.headTop h3,
+.headTop h1,
+.headTop .buttonGroup {
+  z-index: 2;
+}
+
+.headTop h1 {
+  font-size: 50pt;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.dtv {
+  display: flex;
+  gap: 50px;
+
+  margin-top: 50px;
+}
+
+.dtv div.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dtv div.col h3:nth-of-type(1) {
+  font-size: 18pt;
+  color: var(--primary);
+}
+
+.headBottom {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+menu > ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+menu > ul > li {
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+menu > ul > li:hover {
+  text-decoration: underline;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown span {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 0.5rem;
+  min-width: 200px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  z-index: -100;
+  opacity: 0;
+  transition-duration: 100ms;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  z-index: 100;
+  opacity: 1;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+}

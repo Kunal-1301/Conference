@@ -1,0 +1,112 @@
+.authors{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.authors .homeContent{
+    flex: 2;
+    min-width: min(600px, 100%);
+}
+
+.guides{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.guides li{
+    background-color: var(--bg-surface-2);
+    padding: 15px 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 45%;
+    flex-grow: 1;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.guides li span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.guides li i{
+    color: #727272;
+}
+
+.feeTable{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border-light);
+    margin-top: 1.5rem;
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.feeTable td, .feeTable th{
+    padding: 20px 10px;
+    border: 1px solid var(--border-light);
+}
+
+.feeTable th {
+    background: var(--bg-surface-2);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.feeTable tbody tr:hover {
+    background: var(--bg-surface-2);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 1024px) {
+    .authors {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .authors .homeContent {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .authors {
+        gap: 20px;
+    }
+
+    .guides {
+        flex-direction: column;
+    }
+
+    .guides li {
+        flex-basis: 100%;
+    }
+
+    .feeTable {
+        font-size: 0.9rem;
+    }
+
+    .feeTable td, .feeTable th {
+        padding: 12px 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feeTable {
+        font-size: 0.8rem;
+    }
+
+    .feeTable td, .feeTable th {
+        padding: 10px 5px;
+    }
+}
+

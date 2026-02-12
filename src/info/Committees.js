@@ -1,0 +1,226 @@
+const committees = [
+    {
+        title: 'Chief Patron',
+        members: [
+            { name: 'Dr RR Vaderea', img: './dummy.jpg', position: 'Chancellor, Thapar Institute of Engineering and Technology (TIET), Patiala.' },
+        ],
+    },
+    {
+        title: 'Patron',
+        members: [
+            { name: 'Prof Padmakumar Nair', img: './dummy.jpg', position: 'Vice Chancellor, Thapar Institute of Engineering and Technology.' },
+        ],
+    },
+    {
+        title: 'Honorary Chairs',
+        members: [
+            { name: 'Prof Ajay Batish', img: './dummy.jpg', position: 'Pro Vice Chancellor, Thapar Institute of Engineering and Technology.' },
+            { name: 'Prof Hans van Ees', img: './dummy.jpg', position: 'Honorary Dean, Thapar School of Liberal Arts & Sciences, Patiala.' },
+        ],
+    },
+    {
+        title: 'IEEE Delhi Section Oversight Committee',
+        members: [
+            { name: 'Prof. M N Hoda', img: './dummy.jpg', position: 'Chairperson' },
+            { name: 'Prof. Jasdeep Dhanoa', img: './dummy.jpg', position: 'Executive Vice Chair' },
+            { name: 'Prof. Rajnish Sharma', img: './dummy.jpg', position: 'Vice Chair' },
+            { name: 'Prof. Sneha Kabra', img: './dummy.jpg', position: 'Secretary' },
+            { name: 'Prof. Shruti Jain', img: './dummy.jpg', position: 'Joint Secretary' },
+            { name: 'Prof Anshul Varshney', img: './dummy.jpg', position: 'Treasurer' },
+        ],
+    },
+    {
+        title: 'General Chairs',
+        members: [
+            { name: 'Prof Vinay Kumar', img: './dummy.jpg', position: 'Dean, Thapar School of Liberal Arts & Sciences, Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Prof Tim Miller', img: './dummy.jpg', position: 'School of Electrical Engineering and Computer Science, The University of Queensland' },
+        ],
+    },
+    {
+        title: 'Conference Conveners',
+        members: [
+            { name: 'Dr Rahul Upadhyay', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Mohammed Usman', img: './dummy.jpg', position: 'Bennett University' },
+        ],
+    },
+    {
+        title: 'Organizing Secretary',
+        members: [
+            { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology' },
+        ],
+    },
+    {
+        title: 'Steering Committee',
+        members: [
+            { name: 'Prof R S Kaler', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Meenakshi Sood', img: './dummy.jpg', position: 'NITTTR, Chandigarh' },
+            { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Prof (retd) Sunil Bhooshan', img: './dummy.jpg', position: 'Mahindra University, Hyderabad' },
+        ],
+    },
+    {
+        title: 'Advisory Committee',
+        members: [
+            { name: 'Prof Rajesh Dikshit', img: './dummy.jpg', position: 'NITTTR, Bhopal' },
+            { name: 'Prof. Omar Farooq', img: './dummy.jpg', position: 'Aligarh Muslim University, Patiala, India' },
+            { name: 'Dr Mudit Gupta', img: './dummy.jpg', position: 'Saral Diagnostics, Delhi, India' },
+            { name: 'Prof Sandeep Sharma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Prof Dwarka Nath Rath', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Prof Rajashri Khanai', img: './dummy.jpg', position: 'KLE Technological University, Belagavi Campus, India' },
+            { name: 'Dr Karun Verma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Finance Committee',
+        members: [
+            { name: 'Sh. Pankaj Sinha', img: './dummy.jpg', position: 'Chair: Finance Officer, Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Member: Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Arun Chaterjee', img: './dummy.jpg', position: 'Member: Thapar Institute of Engineering and Technology, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Publications Chairs',
+        members: [
+            { name: 'Dr Mohd Wajid', img: './dummy.jpg', position: 'Aligarh Muslim University, Aligarh' },
+            { name: 'Dr Vivek Bawa', img: './dummy.jpg', position: 'University of Plymouth, UK' },
+        ],
+    },
+    {
+        title: 'Sponsorship and Industry Liaison Committee',
+        members: [
+            { name: 'Dr Anupam Garg', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+            { name: 'Dr Gaganpreet Kaur', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Alka Pandita', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+            { name: 'Mr Navdeep Singh', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Publicity Committee',
+        members: [
+            { name: 'Ms Radhika Kalia', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+            { name: 'Ms Nivedita Anand', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+            { name: 'Ms Sharnish Kaur', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+            { name: 'Mr Arnab Rath', img: './dummy.jpg', position: 'Thapar School of Liberal Arts & Sciences, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Registration Committee',
+        members: [
+            { name: 'Dr Arun Chatterjee', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Gaganpreet Kaur', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Gitanjali Chandwani', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Rajneesh Sharma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Dr Sheikh Adil Edrisi', img: './dummy.jpg', position: 'Thapar School of Liberal Arts and Sciences, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Local Arrangement Committee',
+        members: [
+            { name: 'Dr Anil Arora', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Ms Riya Kalia', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Ms Palack Deep Kaur', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Mr Harvinder', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Mr Manoj Arya', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+            { name: 'Mr Armaan Goyal', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+        ],
+    },
+    {
+        title: 'Technical Program Committee (Chairs, Trackwise)',
+        members: [
+            { name: 'Dr. Ashwani Sharma', img: './dummy.jpg', position: 'Track 1: IIT Ropar, India' },
+            { name: 'Dr. Abhinav Dhall', img: './dummy.jpg', position: 'Track 2: Monash University, Australia' },
+            { name: 'Dr Mudit Gupta', img: './dummy.jpg', position: 'Track 3: CEO, Saral Diagnostics' },
+            { name: 'Prof. Prabin Kumar Padhy', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
+            { name: 'Dr. Sachin Kumar Jain', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
+            { name: 'Prof. Kulbir Singh', img: './dummy.jpg', position: 'Track 5: TIET, Patiala, India' },
+            { name: 'Dr. Vinay Kumar Vakharia', img: './dummy.jpg', position: 'Track 5: PDEU, Gandhinagar, India' },
+            { name: 'Prof. Mandeep Singh', img: './dummy.jpg', position: 'Track 6: TIET, Patiala, India' },
+        ],
+    },
+    {
+        title: 'List of Reviewers',
+        members: [
+            { name: 'Dr. Simarjit Kaur', img: './dummy.jpg', position: 'Chitkara University, Rajpura, India' },
+            { name: 'Dr. Rohit Rana', img: './dummy.jpg', position: 'LNM Institute of Engineering and Technology, Jaipur, India' },
+            { name: 'Dr. Vishal Pandey', img: './dummy.jpg', position: 'University of Engineering and Management (UEM), Jaipur, India' },
+            { name: 'Dr. Akash Gupta', img: './dummy.jpg', position: 'LNM Institute of Engineering and Technology, Jaipur, India' },
+            { name: 'Dr. Shishir Maheshwari', img: './dummy.jpg', position: 'National Institute of Technology (NIT) Allahabad, India' },
+            { name: 'Dr. Shalabh Kumar Mishra', img: './dummy.jpg', position: 'Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, India' },
+            { name: 'Dr. Geetaly', img: './dummy.jpg', position: 'Plaksha University, Chandigarh, India' },
+            { name: 'Dr. Ankush Kansal', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Hardeep Singh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Sanjay Kumar', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Ashutosh Kumar Singh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Surbhi Sharma', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Ravi Kumar', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Sujit Kumar Patel', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Debabrata Ghosh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Amit Munjal', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Bharat Garg', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Rajneesh Sharma', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Durgesh Singh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Arnab Pattanayak', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Shireesh Kumar Rai', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Sandeep Mandia', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Mahesh Shamrao Chaudhari', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Deepak Kumar Rakesh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Sumit Varshaney', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Durgesh Singh', img: './dummy.jpg', position: 'TIET, Patiala, India' }, // Duplicate in PDF
+            { name: 'Dr. Parveen Malik', img: './dummy.jpg', position: 'NIT, Kurukshetra, India' },
+            { name: 'Dr. Chandramohan Dhasarathan', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Ashu Sharma', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Amanpreet Kaur-II', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Debabrata Ghosh', img: './dummy.jpg', position: 'TIET, Patiala, India' }, // Duplicate in PDF
+            { name: 'Dr. Geetika Dua', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Dinesh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Poonam Verma', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Debayani Ghosh', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Sandeep Mandia', img: './dummy.jpg', position: 'TIET, Patiala, India' }, // Duplicate in PDF
+            { name: 'Dr. Saurabh Sharma', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Amrita', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Husanbir Singh Pannu', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Chinmaya Panigrahy', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Anu Bajaj', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr. Anjula Mehto', img: './dummy.jpg', position: 'TIET, Patiala, India' },
+            { name: 'Dr Manvir Kaur', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Tanvi Dovedi', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Neeraj Grover', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Riyaz Ahmad', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Aarti Bansal', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. S Pratap Singh', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Mohammad Faseehuddin', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Ankit Soni', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Shruti Arora', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Nitin Arora', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Raja Rout', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Pankaj Kumar', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Shivendra Shivani', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Nidhi Kalra', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. P Kalyan Chakravarthy K', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Sachin Singh', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Gautam Setia', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Ashutosh Aggarwal', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Vishal Gupta', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Manpreet Singh', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Danie Roy A. B', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Deepshikha Tiwari', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Jasmeet Singh', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Rohit Ahuja', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Chinmaya Panigrahy', img: './dummy.jpg', position: 'TIET, Patiala' }, // Duplicate in PDF
+            { name: 'Dr. Shailendra Tiwari', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Lateef Ahmad Wani', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Munish Kansal', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Vikas Sharma', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Kavita', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Priyankar Dey', img: './dummy.jpg', position: 'TIET, Patiala' },
+            { name: 'Dr. Saurabh Kumar', img: './dummy.jpg', position: 'NIT, Hamirpur, India' },
+            { name: 'Dr. Dharmendra Yadav', img: './dummy.jpg', position: 'NIT, Kurukshetra, India' },
+            { name: 'Dr. Shatrugan Modi', img: './dummy.jpg', position: 'Indian Institute of Information Technology (IIIT), Una, India' },
+            { name: 'Dr. Anshu Parashar', img: './dummy.jpg', position: 'NIT, Kurukshetra, India' },
+        ],
+    },
+];
+
+
+
+export default committees

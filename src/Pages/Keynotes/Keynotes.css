@@ -1,0 +1,29 @@
+.keySpeaker h2{
+    margin-bottom: 0px;
+}
+
+.keySpeaker p{
+
+    margin-top: 1lh;
+    width: 80ch;
+
+}
+
+.keySpeaker .memberImage{
+    height: 300px;
+}
+
+.speakerdtv{
+    display: flex;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.speakerdtv div{
+    background-color: var(--primary2);
+    color: var(--lbg);
+
+    padding: 10px 20px;
+    border-radius: 5px;
+}
