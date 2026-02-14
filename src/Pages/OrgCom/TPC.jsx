@@ -1,21 +1,9 @@
-import { useState } from 'react';
 import tracks from "../../info/Tracks"
 import committeeData from "../../info/Committees"
 import PageHero from "../../Components/Common/PageHero"
 import './OrgCom.css'; // Ensure CSS is imported
 
 export default function TPC() {
-    const [searchTerm, setSearchTerm] = useState('');
-
-    // Filter logic for technical committees
-    const filteredTechnical = committeeData.technical.map(section => ({
-        ...section,
-        members: section.members.filter(member =>
-            member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            member.position.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-    })).filter(section => section.members.length > 0);
-
     return (
         <div className="tpc-page">
             <PageHero
@@ -52,34 +40,20 @@ export default function TPC() {
                 </div>
 
                 <div className="technical-committee-section">
-                    <div className="search-container">
-                        <input
-                            type="text"
-                            placeholder="Search reviewers or committee members..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="search-input"
-                        />
-                    </div>
-
-                    {/* Render Filtered Technical Committee Sections */}
-                    {filteredTechnical.length > 0 ? (
-                        filteredTechnical.map((section, index) => (
-                            <div key={index} className="technical-section-group">
-                                <h2 className="section-title">{section.title}</h2>
-                                <ul className="reviewCom">
-                                    {section.members.map((member, idx) => (
-                                        <li key={idx}>
-                                            <span><strong>{member.name}</strong></span>
-                                            <span>{member.position}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))
-                    ) : (
-                        <p className="no-results">No members found matching "{searchTerm}"</p>
-                    )}
+                    {/* Render Technical Committee Sections */}
+                    {committeeData.technical.map((section, index) => (
+                        <div key={index} className="technical-section-group">
+                            <h2 className="section-title">{section.title}</h2>
+                            <ul className="reviewCom">
+                                {section.members.map((member, idx) => (
+                                    <li key={idx}>
+                                        <span><strong>{member.name}</strong></span>
+                                        <span>{member.position}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

@@ -13,37 +13,37 @@ export const importantDates = [
     {
         id: 1,
         label: "Paper Submission Deadline",
-        date: "30 September 2026",
+        date: "30th August 2026",
         key: "paperSubmission"
     },
     {
         id: 2,
         label: "Peer Review Period Start",
-        date: "5 October 2026",
+        date: "1st September 2026",
         key: "reviewStart"
     },
     {
         id: 3,
         label: "Peer Review Period End",
-        date: "15 November 2026",
+        date: "10th October 2026",
         key: "reviewEnd"
     },
     {
         id: 4,
         label: "Notification of Acceptance",
-        date: "30 November 2026",
+        date: "15th October 2026",
         key: "notification"
     },
     {
         id: 5,
         label: "Camera Ready Submission",
-        date: "15 December 2026",
+        date: "15th November 2026",
         key: "cameraReady"
     },
     {
         id: 6,
         label: "Registration Deadline",
-        date: "30 December 2026",
+        date: "30th November 2026",
         key: "registration"
     },
     {

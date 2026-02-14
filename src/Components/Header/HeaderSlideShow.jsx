@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HeaderSlideshow.css'; // Custom styles here
 
-import dates from "../../info/Dates"
-
+import { conferenceInfo } from '../../data/conferenceData';
 const images = [
     '/header/1.jpg',
     '/header/2.jpg',
@@ -32,8 +31,9 @@ const HeaderSlideshow = ({ type = "full" }) => {
 
             <div className={`headerTopContent ${type === 'compact' ? 'compact' : ''}`}>
                 <div className="heroLogos">
-                    <img src="./thapar_logo.png" alt="Thapar Institute" className="heroLogo" />
-                    <img src="./ieee_logo.png" alt="IEEE Delhi Section" className="heroLogo" />
+                    <img src="./tiet.png" alt="Thapar Institute" className="heroLogo" />
+                    <img src="./tslas.png" alt="TSLAS" className="heroLogo" />
+                    <img src="./IEEE.webp" alt="IEEE Delhi Section" className="heroLogo" />
                 </div>
                 <h1>AIDL - HCSY 2027</h1>
                 <h3>
@@ -43,7 +43,7 @@ const HeaderSlideshow = ({ type = "full" }) => {
                 {type === 'full' && (
                     <>
                         <div className="dtv">
-                            <h3>{dates.ConferenceDates} | TIET, Patiala, India</h3>
+                            <h3>{conferenceInfo.dates} | TIET, Patiala, India</h3>
                         </div>
                         <div className="buttonGroup">
                             <a href='#home' className="btn dark">About Us</a>

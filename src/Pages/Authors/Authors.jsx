@@ -139,31 +139,6 @@ export default function Authors() {
                             </tbody>
                         </table>
                     </Section>
-
-                    <Section title="The Heart of Modern AI" variant="block">
-                        <div className="equationContainer">
-                            <div className="equation">
-                                <span className="func">Attention</span>
-                                <span className="paren">(</span>
-                                <span className="var">Q</span>, <span className="var">K</span>, <span className="var">V</span>
-                                <span className="paren">)</span>
-                                <span className="eq">=</span>
-                                <span className="func">softmax</span>
-                                <span className="paren">(</span>
-                                <div className="fraction">
-                                    <div className="numerator">
-                                        <span className="var">Q</span><span className="var">K</span><sup>T</sup>
-                                    </div>
-                                    <div className="denominator">
-                                        &radic;<span className="var">d</span><sub>k</sub>
-                                    </div>
-                                </div>
-                                <span className="paren">)</span>
-                                <span className="var">V</span>
-                            </div>
-                            <p className="eqDesc">The Scalar-Dot Product Attention Mechanism - The core of the Transformer architecture.</p>
-                        </div>
-                    </Section>
                 </div>
             </div>
         </div>

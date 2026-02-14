@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./Venue.css"
-import { MapContainer, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import { faArrowUpRightFromSquare, faMapMarkerAlt, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Section from "../../Components/Common/Section";
@@ -69,9 +67,16 @@ export default function Venue() {
                 <Section title="How to Reach" variant="block">
                     <div className="mapContainer">
                         <div className="mapWrapper mainMap">
-                            <MapContainer center={[30.354438, 76.37270]} zoom={15} scrollWheelZoom={true}>
-                                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                            </MapContainer>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7919447647896!2d76.37014831508205!3d30.354438081768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028ab86468ee9%3A0x3f22f8f8e07da86a!2sThapar%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1644000000000!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="TIET Patiala Location"
+                            ></iframe>
                         </div>
                         <div className="mapWrapper worldMap">
                             <img src="./London.png" alt="World Map Location" />

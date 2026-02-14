@@ -1,56 +1,108 @@
 /* ===== Track Committee Styles ===== */
 .tracks{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 .track{
-    min-width: 400px;
-    flex-basis: 45%;
-    flex-grow: 1;
-
     display: flex;
     flex-direction: column;
-
-    background-color: var(--bg-gray);
-    border-radius: 10px;
-    
+    background: var(--bg-surface);
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-light);
+}
+
+.track:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .trackTitle{
     width: 100%;
-
     text-align: left;
     color: white;
-    background-color: black;
-    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    padding: 30px;
+    position: relative;
+}
 
-    padding: 30px 30px;
+.trackTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.trackTitle h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.trackTitle p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .trackChairs{
-    padding: 20px 30px;
+    padding: 25px 30px;
+    background: var(--bg-surface);
 }
 
 .trackChairs h4{
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .trackChairs > div{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .trackChairs > div > div{
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    padding: 15px 18px;
+    border-radius: 8px;
+    background: var(--bg-surface-2);
+    border-left: 3px solid var(--accent-gold);
+    transition: all 0.2s ease;
+}
 
-    padding: 15px;
-    border-radius: 7px;
-    background-color: var(--bg-gray-dark);
+.trackChairs > div > div:hover {
+    background: var(--bg-gray-light);
+    transform: translateX(5px);
+}
+
+.trackChairs > div > div span:first-child {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.trackChairs > div > div span:last-child {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .tracks {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ===== Review Committee Styles ===== */
