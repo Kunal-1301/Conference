@@ -10,7 +10,7 @@ const images = [
     '/header/4.jpg'
 ];
 
-const HeaderSlideshow = () => {
+const HeaderSlideshow = ({ type = "full" }) => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
@@ -30,19 +30,27 @@ const HeaderSlideshow = () => {
                 ></div>
             ))}
 
-            <div className="headerTopContent">
-                <h1>AIDL - HCSY 2026</h1>
+            <div className={`headerTopContent ${type === 'compact' ? 'compact' : ''}`}>
+                <div className="heroLogos">
+                    <img src="./thapar_logo.png" alt="Thapar Institute" className="heroLogo" />
+                    <img src="./ieee_logo.png" alt="IEEE Delhi Section" className="heroLogo" />
+                </div>
+                <h1>AIDL - HCSY 2027</h1>
                 <h3>
                     International Conference on <br />
                     Artificial Intelligence and Deep Learning Methods for Human-Centric Systems
                 </h3>
-                <div className="dtv">
-                    <h3>{dates.ConferenceDates} | TIET, Patiala, India</h3>
-                </div>
-                <div className="buttonGroup">
-                    <a href='#home' className="btn dark">About Us</a>
-                    <a href="#dates" className="btn light">Important Dates</a>
-                </div>
+                {type === 'full' && (
+                    <>
+                        <div className="dtv">
+                            <h3>{dates.ConferenceDates} | TIET, Patiala, India</h3>
+                        </div>
+                        <div className="buttonGroup">
+                            <a href='#home' className="btn dark">About Us</a>
+                            <a href="#dates" className="btn light">Important Dates</a>
+                        </div>
+                    </>
+                )}
             </div>
         </div>
     );

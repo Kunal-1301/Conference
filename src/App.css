@@ -6,25 +6,46 @@
 }
 
 :root{
-  --primary: #800000; /* Slightly richer dark red */
+  /* Primary Brand Colors */
+  --primary: #800000; /* Maroon - main brand color */
   --primary-light: #a00000;
   --link: #0056b3;
   
+  /* Accent Colors */
+  --accent-gold: #c5913e; /* Gold/Amber accent - Premium & Academic */
+  --accent-gold-dark: #8a652a;
+  
+  /* Retain variable name for compatibility but map to new color scheme */
+  --accent-blue: var(--accent-gold); 
+  --accent-blue-dark: var(--accent-gold-dark);
+  
+  /* Background Colors */
   --bg-body: #f8f9fa;
   --bg-surface: #ffffff;
   --bg-surface-2: #f3f4f6;
+  --bg-gray-light: #f0f0f0;
+  --bg-gray: #bdbdbd;
+  --bg-gray-dark: #919191;
 
+  /* Text Colors */
   --text-primary: #1a202c;
   --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-gray: #666;
+  --text-dark: #333;
   --text-light: #ffffff;
 
+  /* Border Colors */
   --border-light: #e2e8f0;
+  --border-gray: #9b9b9b;
+  --border-dark: #2d3748;
 
+  /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-  /* Legacy Compatibility Aliases */
+  /* Legacy Compatibility Aliases (TODO: Remove if unused) */
   --primary2: var(--primary-light);
   --lbg: var(--bg-body);
   --lbg2: var(--bg-surface-2);

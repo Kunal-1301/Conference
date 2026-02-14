@@ -38,7 +38,7 @@
 }
 
 .guides li i{
-    color: #727272;
+    color: var(--text-secondary);
 }
 
 .feeTable{

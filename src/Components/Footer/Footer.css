@@ -1,5 +1,6 @@
 .footerTop{
     background-color: var(--primary);
+    border-bottom: 4px solid var(--accent-gold);
     color: white;
     width: 100%;
     padding: 60px 0px;

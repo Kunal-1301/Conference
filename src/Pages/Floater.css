@@ -1,0 +1,87 @@
+/* Floater Sidebar - Important Dates */
+.floater {
+    position: sticky;
+    top: 100px;
+    background: var(--bg-surface);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    height: fit-content;
+}
+
+.impDates h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 12px;
+}
+
+.impDates ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.impDates li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 15px;
+    background: var(--bg-surface-2);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-blue);
+    transition: all 0.3s ease;
+}
+
+.impDates li:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+    border-left-color: var(--primary);
+}
+
+.date-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.date-value {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* Mobile: Convert to horizontal card */
+@media (max-width: 968px) {
+    .floater {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+    }
+
+    .impDates ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+    }
+
+    .impDates li {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .impDates ul {
+        grid-template-columns: 1fr;
+    }
+}

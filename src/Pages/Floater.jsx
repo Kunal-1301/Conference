@@ -1,5 +1,6 @@
 import React from 'react';
 import { importantDates } from "../data/conferenceData";
+import './Floater.css';
 
 export default function Floater() {
     return (
@@ -9,8 +10,8 @@ export default function Floater() {
                 <ul>
                     {importantDates.map((item) => (
                         <li key={item.id}>
-                            {item.label}
-                            <span>{item.date}</span>
+                            <span className="date-label">{item.label}</span>
+                            <span className="date-value">{item.date}</span>
                         </li>
                     ))}
                 </ul>
@@ -18,4 +19,3 @@ export default function Floater() {
         </aside>
     );
 }
-

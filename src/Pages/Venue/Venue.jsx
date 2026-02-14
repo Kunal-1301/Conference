@@ -1,74 +1,104 @@
+import React, { useState, useEffect } from 'react';
 import "./Venue.css"
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faMapMarkerAlt, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Section from "../../Components/Common/Section";
+import PageHero from "../../Components/Common/PageHero";
+
+const carouselImages = [
+    "./3.jpeg",
+    "./patiala.jpeg",
+    "/thapar1.jpg",
+    "/thapar2.jpg"
+];
 
 export default function Venue() {
+    const [currentImage, setCurrentImage] = useState(0);
 
-    // const navigate = useNavigate() // Unused
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prev) => (prev + 1) % carouselImages.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
-    // const defaultProps = { ... } // Unused
+    const nextImage = () => setCurrentImage((prev) => (prev + 1) % carouselImages.length);
+    const prevImage = () => setCurrentImage((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
 
     return (
-        <div className="page venue">
+        <div className="venue-page">
+            <PageHero
+                title="Conference Venue"
+                subtitle="Thapar Institute of Engineering and Technology, Patiala"
+                backgroundImage="/thapar2.jpg"
+            />
+            <div className="page venue">
+                <div className="venueHero">
+                    <div className="carouselContainer">
+                        {carouselImages.map((img, index) => (
+                            <div
+                                key={index}
+                                className={`carouselSlide ${index === currentImage ? 'active' : ''}`}
+                                style={{ backgroundImage: `url(${img})` }}
+                            />
+                        ))}
+                        <button className="carouselBtn prev" onClick={prevImage}><FontAwesomeIcon icon={faChevronLeft} /></button>
+                        <button className="carouselBtn next" onClick={nextImage}><FontAwesomeIcon icon={faChevronRight} /></button>
+                    </div>
 
-            <div className="venueGrid">
-                <div className="venueMainSection">
-                    <img src="./3.jpeg" alt="" />
-                    <img className="accentImage" src="./ThaparVector.png" alt="" />
-                    <div>
-                        <h2>About The Venue</h2>
-                        <p>Thapar Institute of Engineering and Technology, Patiala</p>
-                        <hr />
-                        <p>
-                            Thapar Institute of Engineering and Technology, established in 1956, stands as a beacon of academic excellence and innovation in India. With a legacy of producing industry leaders, pioneering research, and fostering holistic development, it continues to empower future engineers and technologists to shape a smarter, sustainable, and inclusive world
+                    <div className="venueAddressCard">
+                        <div className="addressBadge">
+                            <FontAwesomeIcon icon={faMapMarkerAlt} />
+                            <span>Conference Venue</span>
+                        </div>
+                        <h2>Thapar Institute of Engineering and Technology</h2>
+                        <p className="addressText">
+                            Bhadson Rd, Adarsh Nagar, Prem Nagar,<br />
+                            Patiala, Punjab 147004, India
                         </p>
-                        <div style={{ display: 'flex', gap: '20px' }}>
-                            <a href="https://thapar.edu/" target="_blank"><button className="dark">Visit Website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> </button></a>
-                            {/* <a ><button className="dark">Photo Gallery <FontAwesomeIcon icon={faCameraRetro} /> </button></a> */}
+                        <div className="addressLinks">
+                            <a href="https://thapar.edu/" target="_blank" rel="noreferrer">
+                                <button className="dark">Visit Website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div className="venueMainSection">
-                    <div>
-                        <h2>Patiala</h2>
-                        <p>The Royal Heritage of Punjab</p>
-                        <hr />
-                        <p>Patiala, founded in 1763 by Baba Ala Singh, is a princely city in Punjab known for its regal heritage and vibrant culture. Once the capital of the Patiala State, it flourished under Maharaja Bhupinder Singh. Famous for its architecture, traditional attire, and classical music, Patiala remains a proud emblem of Punjabi royalty and tradition.</p>
-                        <a href="https://patiala.nic.in/tourist-places/" target="_blank"><button className="dark">Visit Website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> </button></a>
+                <Section title="How to Reach" variant="block">
+                    <div className="mapContainer">
+                        <div className="mapWrapper mainMap">
+                            <MapContainer center={[30.354438, 76.37270]} zoom={15} scrollWheelZoom={true}>
+                                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                            </MapContainer>
+                        </div>
+                        <div className="mapWrapper worldMap">
+                            <img src="./London.png" alt="World Map Location" />
+                            <p className="worldMapHint">Patiala, India</p>
+                        </div>
                     </div>
-                    <img src="./patiala.jpeg" alt="" />
-                </div>
+
+                    <div className="transportGrid">
+                        <div className="transportItem">
+                            <strong>By Train:</strong>
+                            <p>Patiala is well-connected to Delhi via direct trains like Shatabdi and Express services. Journey time: 5–6 hours.</p>
+                        </div>
+                        <div className="transportItem">
+                            <strong>By Road:</strong>
+                            <p>Approximately 250 km from Delhi via NH44 and NH7. Drive time: 4.5-5.5 hours.</p>
+                        </div>
+                        <div className="transportItem">
+                            <strong>By Bus:</strong>
+                            <p>Regular Volvo and deluxe buses run from ISBT Kashmere Gate to Patiala.</p>
+                        </div>
+                        <div className="transportItem">
+                            <strong>By Air:</strong>
+                            <p>Nearest airport is Chandigarh (IXC), 70 km away. Taxis take under 2 hours.</p>
+                        </div>
+                    </div>
+                </Section>
             </div>
-
-            <Section title="How to Reach" variant="block">
-                <div className="mapCont">
-                    <img src="./London.png" alt="" />
-                    <div className="map">
-                        <MapContainer center={[30.354438, 76.37270]} zoom={15} scrollWheelZoom={true}>
-                            <TileLayer
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                            />
-                        </MapContainer>
-                    </div>
-                </div>
-
-                <p style={{ marginTop: '20px' }}>
-                    Reaching Patiala from Delhi is convenient and offers multiple travel options:
-                </p>
-
-                <ul className="transport">
-                    <li><strong>By Train:</strong> Patiala is well-connected to Delhi via direct trains like Shatabdi and Express services. The journey takes around 5–6 hours.</li>
-                    <li><strong>By Road:</strong> You can drive or hire a cab via NH44 and NH7. The drive spans about 250 km and takes approximately 4.5-5.5 hours.</li>
-                    <li><strong>By Bus:</strong> Regular Volvo and deluxe buses run from ISBT Kashmere Gate to Patiala.</li>
-                    <li><strong>By Air:</strong> The nearest airport is in IXC Chandigarh (70 km away); from there, taxis or buses can take you to Patiala in under 2 hours.</li>
-                </ul>
-            </Section>
-
-
         </div>
-    )
+    );
 }

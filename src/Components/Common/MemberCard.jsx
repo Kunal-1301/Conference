@@ -1,12 +1,21 @@
 import React from 'react';
 import './MemberCard.css';
 
-const MemberCard = ({ name, img, position, affiliation, isKeynote = false, children }) => {
-    // Basic cleanup for image path if needed (e.g. if generic './dummy.jpg' needs absolute)
-    // Assuming data cleanup happened elsewhere, but defensive coding here:
-    // const displayImg = img && img.startsWith('.') ? img.replace('.', '') : img; 
-    // Actually, let's trust the props for now, standard React behavior.
+const MemberCard = ({ name, img, position, affiliation, isKeynote = false, variant = 'default', children }) => {
+    // Simple variant for committee pages (no image, just name + position with left border)
+    if (variant === 'simple') {
+        return (
+            <div className="member-card-simple">
+                <div className="member-card-simple-content">
+                    <h4 className="member-name">{name}</h4>
+                    {position && <p className="member-position">{position}</p>}
+                    {affiliation && <p className="member-affiliation">{affiliation}</p>}
+                </div>
+            </div>
+        );
+    }
 
+    // Default variant with image
     return (
         <div className={`member-card ${isKeynote ? 'keynote' : ''}`}>
             <div className="member-image-container">

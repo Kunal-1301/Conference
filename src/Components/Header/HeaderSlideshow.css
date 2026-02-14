@@ -72,7 +72,7 @@
 .dtv h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffd700 !important; /* Gold for date/location distinctiveness */
+    color: var(--accent-gold) !important; /* Gold for date/location distinctiveness */
     margin-top: 10px;
 }
 
@@ -92,5 +92,37 @@
 
 .btn.light:hover {
     background: white;
+}
+
+/* Compact style for subpages */
+.slideshowContainer.compact {
+  height: 40vh;
+}
+
+.headerTopContent.compact {
+  top: 60%;
+}
+
+.headerTopContent.compact h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.heroLogos {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroLogo {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+@media (max-width: 768px) {
+    .heroLogo { height: 50px; }
+    .heroLogos { gap: 15px; }
 }
 

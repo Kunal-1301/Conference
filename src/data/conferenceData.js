@@ -1,55 +1,55 @@
 // Centralized conference data configuration
 export const conferenceInfo = {
-    name: "AIDL-HCSY 2026",
+    name: "AIDL-HCSY 2027",
     fullName: "International Conference on Artificial Intelligence and Deep Learning Methods for Human-Centric Systems",
-    year: 2026,
-    dates: "7 - 9 January 2027",
+    year: 2027,
+    dates: "18th - 20th January 2027",
     venue: "Thapar Institute of Engineering and Technology",
     location: "Patiala, India",
-    countdownTarget: "2027-01-17T23:59:59",
+    countdownTarget: "2027-01-18T09:00:00",
 };
 
 export const importantDates = [
     {
         id: 1,
         label: "Paper Submission Deadline",
-        date: "30 August 2026",
+        date: "30 September 2026",
         key: "paperSubmission"
     },
     {
         id: 2,
         label: "Peer Review Period Start",
-        date: "1 September 2026",
+        date: "5 October 2026",
         key: "reviewStart"
     },
     {
         id: 3,
         label: "Peer Review Period End",
-        date: "10 October 2026",
+        date: "15 November 2026",
         key: "reviewEnd"
     },
     {
         id: 4,
         label: "Notification of Acceptance",
-        date: "15 October 2026",
+        date: "30 November 2026",
         key: "notification"
     },
     {
         id: 5,
         label: "Camera Ready Submission",
-        date: "15 November 2026",
+        date: "15 December 2026",
         key: "cameraReady"
     },
     {
         id: 6,
         label: "Registration Deadline",
-        date: "30 November 2026",
+        date: "30 December 2026",
         key: "registration"
     },
     {
         id: 7,
         label: "Conference Dates",
-        date: "7 - 9 January 2027",
+        date: "18th - 20th January 2027",
         key: "conference"
     }
 ];

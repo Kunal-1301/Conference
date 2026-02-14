@@ -19,7 +19,7 @@
     width: 100%;
     height: 250px; /* Fixed height for consistency */
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: var(--bg-gray-light);
     position: relative;
 }
 
@@ -47,7 +47,7 @@
 .member-name {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-dark);
     margin: 0;
     line-height: 1.3;
 }
@@ -61,7 +61,7 @@
 
 .member-affiliation {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--text-gray);
     margin-top: auto; /* Pushes to bottom if needed */
     line-height: 1.4;
 }
@@ -103,3 +103,68 @@
         height: 300px;
     }
 }
+
+/* ===== Simple Variant (Committee Cards) ===== */
+.member-card-simple {
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-blue); /* Blue accent border */
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.member-card-simple:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateX(4px);
+}
+
+.member-card-simple-content {
+    width: 100%;
+}
+
+.member-card-simple .member-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+}
+
+.member-card-simple .member-position {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.member-card-simple .member-affiliation {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 4px 0 0 0;
+    line-height: 1.4;
+}
+
+/* Special styling for Chief Patron / Patron cards (centered, darker bg) */
+.member-card-simple.featured {
+    background: linear-gradient(135deg, var(--accent-gold-dark) 0%, var(--accent-gold) 100%);
+    color: white;
+    border-left: none;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+}
+
+.member-card-simple.featured .member-name {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.member-card-simple.featured .member-position {
+    color: rgba(255, 255, 255, 0.9);
+}
+
