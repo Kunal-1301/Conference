@@ -10,6 +10,7 @@ import Authors from './Pages/Authors/Authors'
 import TPC from './Pages/OrgCom/TPC'
 import AboutThapar from './Pages/AboutThapar'
 import AboutPatiala from './Pages/AboutPatiala'
+import Registration from './Pages/Registration/Registration'
 import ScrollToTop from './Components/Common/ScrollToTop'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="tpc" element={<TPC />} />
             <Route path="about-thapar" element={<AboutThapar />} />
             <Route path="about-patiala" element={<AboutPatiala />} />
+            <Route path="registration" element={<Registration />} />
           </Route>
         </Routes>
         <Footer />

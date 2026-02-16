@@ -62,7 +62,7 @@ export default function Header() {
             </ul>
           </li>
 
-          <li>Registration</li>
+          <li><Link to='/registration'>Registration</Link></li>
           <li><Link to='/venue'>Venue</Link></li>
         </ul>
       </div>

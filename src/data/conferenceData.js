@@ -122,7 +122,7 @@ export const keynotes = [
         affiliation: "University of Queensland, Australia",
         image: "https://about.uq.edu.au/sites/default/files/profiles/41328.png",
         bio: "Tim Miller is a world-leading researcher in Explainable Artificial Intelligence (XAI), focusing on developing methods to make AI systems transparent and interpretable. His work uniquely integrates insights from cognitive science and human-computer interaction to build human-centered AI. He is highly cited for foundational research that helps people understand, trust, and collaborate with complex AI decision-making systems.",
-        sessionDate: "28th February 2026",
+        sessionDate: "18th February 2027",
         sessionTime: "12 Noon",
         sessionMode: "Online"
     },
@@ -133,7 +133,7 @@ export const keynotes = [
         affiliation: "Brno University of Technology, Czech Republic",
         image: "https://i1.rgstatic.net/ii/profile.image/277711231701009-1443222925372_Q512/Jiri-Hosek-2.jpg",
         bio: "Jiří Hošek is a prolific researcher in wireless communications, having co-authored over 130 papers on 4G/5G cellular systems, the Internet of Things (IoT), and network performance. His work centrally focuses on optimizing Quality of Service (QoS) and Quality of Experience (QoE) for network users. His recent research also leverages AI and machine learning for optimizing emerging technologies, including UAV (drone) communication, mmWave networks, and satellite systems.",
-        sessionDate: "28th February 2026",
+        sessionDate: "19th February 2027",
         sessionTime: "12 Noon",
         sessionMode: "Online"
     },
@@ -144,7 +144,7 @@ export const keynotes = [
         affiliation: "Georgia Institute of Technology, Atlanta, USA",
         image: "https://declercq.gatech.edu/images/2016-nico-declercq.jpg",
         bio: "Dr. Declercq's lab specializes in experimental and theoretical Nondestructive Evaluation (NDE) for industrial applications, promoting environmental consciousness. The team is known for advanced ultrasonic NDE (0.5 MHz - 2 GHz) using diverse methods like linear/nonlinear acoustics and air-coupled/immersion scans. This research is applied to traditional materials, composites, solar panels, and metamaterials.",
-        sessionDate: "28th February 2026",
+        sessionDate: "20th February 2027",
         sessionTime: "12 Noon",
         sessionMode: "Online"
     }

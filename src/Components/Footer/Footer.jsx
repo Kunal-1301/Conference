@@ -8,10 +8,10 @@ import { conferenceInfo } from "../../data/conferenceData";
 export default function Footer() {
   return (
     <footer className="footer">
-      <section className="footerTop" aria-label="Conference Countdown">
+      {/* <section className="footerTop" aria-label="Conference Countdown">
         <h2>{conferenceInfo.name} WILL BEGIN IN</h2>
         <CountdownTimer targetDate={conferenceInfo.countdownTarget} />
-      </section>
+      </section> */}
 
       <section className="footerBottom">
         <div className="col">

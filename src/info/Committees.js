@@ -60,19 +60,19 @@ const committeeData = {
                 { name: 'Dr Karun Verma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
             ],
         },
-        {
-            title: 'Technical Program Committee (Chairs, Trackwise)',
-            members: [
-                { name: 'Dr. Ashwani Sharma', img: './dummy.jpg', position: 'Track 1: IIT Ropar, India' },
-                { name: 'Dr. Abhinav Dhall', img: './dummy.jpg', position: 'Track 2: Monash University, Australia' },
-                { name: 'Dr Mudit Gupta', img: './dummy.jpg', position: 'Track 3: CEO, Saral Diagnostics' },
-                { name: 'Prof. Prabin Kumar Padhy', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
-                { name: 'Dr. Sachin Kumar Jain', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
-                { name: 'Prof. Kulbir Singh', img: './dummy.jpg', position: 'Track 5: TIET, Patiala, India' },
-                { name: 'Dr. Vinay Kumar Vakharia', img: './dummy.jpg', position: 'Track 5: PDEU, Gandhinagar, India' },
-                { name: 'Prof. Mandeep Singh', img: './dummy.jpg', position: 'Track 6: TIET, Patiala, India' },
-            ],
-        },
+        // {
+        //     title: 'Technical Program Committee (Chairs, Trackwise)',
+        //     members: [
+        //         { name: 'Dr. Ashwani Sharma', img: './dummy.jpg', position: 'Track 1: IIT Ropar, India' },
+        //         { name: 'Dr. Abhinav Dhall', img: './dummy.jpg', position: 'Track 2: Monash University, Australia' },
+        //         { name: 'Dr Mudit Gupta', img: './dummy.jpg', position: 'Track 3: CEO, Saral Diagnostics' },
+        //         { name: 'Prof. Prabin Kumar Padhy', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
+        //         { name: 'Dr. Sachin Kumar Jain', img: './dummy.jpg', position: 'Track 4: PDPM IIITDM, Jabalpur, India' },
+        //         { name: 'Prof. Kulbir Singh', img: './dummy.jpg', position: 'Track 5: TIET, Patiala, India' },
+        //         { name: 'Dr. Vinay Kumar Vakharia', img: './dummy.jpg', position: 'Track 5: PDEU, Gandhinagar, India' },
+        //         { name: 'Prof. Mandeep Singh', img: './dummy.jpg', position: 'Track 6: TIET, Patiala, India' },
+        //     ],
+        // },
     ],
     supporting: [
         {
@@ -141,11 +141,14 @@ const committeeData = {
                 { name: 'Dr. Kishor P. Sarawadekar', img: './dummy.jpg', position: 'Associate Professor, IIT Varanasi, India' },
                 { name: 'Sumit J Darak', img: './dummy.jpg', position: 'PhD (2013), Nanyang Technological University (NTU), Singapore' },
                 { name: 'Mohsin Jamali', img: './dummy.jpg', position: 'University of Toledo' },
-            ],
-        },
-        {
-            title: 'List of Reviewers',
-            members: [
+                { name: 'Vijayalakshmi Ahanathapillai', position: 'University of Warwick' },
+                { name: 'Zeeshan Ahmad', position: 'University of Wolverhampton' },
+                { name: 'Rohan Katti', position: 'Bennett University' },
+                { name: 'Ankit Pandey', position: 'Bennett University' },
+                { name: 'Mohammed Wasid', position: 'LNMIIT' },
+                { name: 'Ajay Yadav', position: 'Bennett University' },
+                { name: 'Sujay Deb', position: 'IIIT-Delhi' },
+                { name: 'Sivaram Nishal Ramadas', position: 'Birmingham City University' },
                 { name: 'Dr. Simarjit Kaur', img: './dummy.jpg', position: 'Chitkara University, Rajpura, India' },
                 { name: 'Dr. Rohit Rana', img: './dummy.jpg', position: 'LNM Institute of Engineering and Technology, Jaipur, India' },
                 { name: 'Dr. Vishal Pandey', img: './dummy.jpg', position: 'University of Engineering and Management (UEM), Jaipur, India' },
