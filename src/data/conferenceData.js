@@ -1,6 +1,6 @@
 // Centralized conference data configuration
 export const conferenceInfo = {
-    name: "AIDL-HCSY 2027",
+    name: "AIDL-HCSY",
     fullName: "International Conference on Artificial Intelligence and Deep Learning Methods for Human-Centric Systems",
     year: 2027,
     dates: "18th - 20th January 2027",
@@ -122,8 +122,8 @@ export const keynotes = [
         affiliation: "University of Queensland, Australia",
         image: "https://about.uq.edu.au/sites/default/files/profiles/41328.png",
         bio: "Tim Miller is a world-leading researcher in Explainable Artificial Intelligence (XAI), focusing on developing methods to make AI systems transparent and interpretable. His work uniquely integrates insights from cognitive science and human-computer interaction to build human-centered AI. He is highly cited for foundational research that helps people understand, trust, and collaborate with complex AI decision-making systems.",
-        sessionDate: "18th February 2027",
-        sessionTime: "12 Noon",
+        sessionDate: "18th January 2027",
+        sessionTime: "4:30 - 6:00 PM",
         sessionMode: "Online"
     },
     {
@@ -133,8 +133,8 @@ export const keynotes = [
         affiliation: "Brno University of Technology, Czech Republic",
         image: "https://i1.rgstatic.net/ii/profile.image/277711231701009-1443222925372_Q512/Jiri-Hosek-2.jpg",
         bio: "Jiří Hošek is a prolific researcher in wireless communications, having co-authored over 130 papers on 4G/5G cellular systems, the Internet of Things (IoT), and network performance. His work centrally focuses on optimizing Quality of Service (QoS) and Quality of Experience (QoE) for network users. His recent research also leverages AI and machine learning for optimizing emerging technologies, including UAV (drone) communication, mmWave networks, and satellite systems.",
-        sessionDate: "19th February 2027",
-        sessionTime: "12 Noon",
+        sessionDate: "19th January 2027",
+        sessionTime: "9:30 - 11:00 AM",
         sessionMode: "Online"
     },
     {
@@ -144,8 +144,8 @@ export const keynotes = [
         affiliation: "Georgia Institute of Technology, Atlanta, USA",
         image: "https://declercq.gatech.edu/images/2016-nico-declercq.jpg",
         bio: "Dr. Declercq's lab specializes in experimental and theoretical Nondestructive Evaluation (NDE) for industrial applications, promoting environmental consciousness. The team is known for advanced ultrasonic NDE (0.5 MHz - 2 GHz) using diverse methods like linear/nonlinear acoustics and air-coupled/immersion scans. This research is applied to traditional materials, composites, solar panels, and metamaterials.",
-        sessionDate: "20th February 2027",
-        sessionTime: "12 Noon",
+        sessionDate: "20th January 2027",
+        sessionTime: "2:30 - 4:00 PM",
         sessionMode: "Online"
     }
 ];

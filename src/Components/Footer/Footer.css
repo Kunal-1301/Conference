@@ -67,6 +67,17 @@ div.seperator{
     flex-grow: 1;
 }
 
+.footerBrand {
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .footerBottom div.col:nth-of-type(2){
     text-align: right;
     opacity: 0.8;

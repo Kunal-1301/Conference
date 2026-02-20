@@ -1,6 +1,7 @@
 import tracks from "../../info/Tracks"
 import committeeData from "../../info/Committees"
 import PageHero from "../../Components/Common/PageHero"
+import SponsorsBar from '../../Components/Common/SponsorsBar';
 import './OrgCom.css'; // Ensure CSS is imported
 
 export default function TPC() {
@@ -56,6 +57,7 @@ export default function TPC() {
                     ))}
                 </div>
             </div>
+            <SponsorsBar />
         </div>
     )
 }

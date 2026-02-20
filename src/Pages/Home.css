@@ -160,11 +160,16 @@
 }
 
 .sponsorGrid img {
-    width: 180px;
+    width: 220px;
     height: auto;
     object-fit: contain;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     mix-blend-mode: multiply;
+}
+
+/* Specific sizing for TSLAS logo */
+.sponsor-2 img {
+    width: 280px;
 }
 
 .sponsorGrid a:hover {
@@ -187,7 +192,11 @@
     }
 
     .sponsorGrid img {
-        width: 150px;
+        width: 180px;
+    }
+
+    .sponsor-2 img {
+        width: 220px;
     }
 
     .keynotesFull .member-card.keynote {
@@ -224,7 +233,11 @@
     }
 
     .sponsorGrid img {
-        width: 120px;
+        width: 140px;
+    }
+
+    .sponsor-2 img {
+        width: 170px;
     }
 
     .speakerdtv {

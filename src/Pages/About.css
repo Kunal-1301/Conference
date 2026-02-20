@@ -272,3 +272,184 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Patiala Page Styles ===== */
+.intro-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.intro-section .sectionHeading {
+    margin-bottom: 20px;
+}
+
+.intro-section .lead-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heritage & Modern Sections */
+.heritage-section, .modern-section {
+    padding: 80px 0;
+}
+
+.modern-section {
+    background: #f8f9fa;
+}
+
+.heritage-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heritage-grid.reverse {
+    direction: rtl; /* simple trick to swap columns, verify if text direction needs resetting */
+}
+
+.heritage-grid.reverse > * {
+    direction: ltr; /* reset text direction */
+}
+
+.heritage-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.heritage-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.heritage-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.heritage-image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.heritage-image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.heritage-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.heritage-image-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+/* Masonry Gallery */
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+
+/* Responsive Patiala */
+@media (max-width: 1024px) {
+    .heritage-grid {
+        gap: 40px;
+    }
+    .masonry-gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .heritage-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .heritage-grid.reverse {
+        direction: ltr; /* Reset for mobile stacking */
+    }
+    
+    .heritage-image-wrapper {
+        order: -1; /* Image first on mobile */
+        margin-bottom: 20px;
+    }
+
+    .intro-section {
+        padding: 40px 15px;
+    }
+    
+    .masonry-gallery {
+        column-count: 1; /* Single column on mobile */
+    }
+}

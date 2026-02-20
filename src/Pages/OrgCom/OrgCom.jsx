@@ -3,6 +3,7 @@ import committeeData from "../../info/Committees"
 import Section from '../../Components/Common/Section';
 import MemberCard from '../../Components/Common/MemberCard';
 import PageHero from '../../Components/Common/PageHero';
+import SponsorsBar from '../../Components/Common/SponsorsBar';
 
 export default function OrgCom() {
   return (
@@ -26,6 +27,7 @@ export default function OrgCom() {
           </Section>
         ))}
       </div>
+      <SponsorsBar />
     </div>
   );
 }

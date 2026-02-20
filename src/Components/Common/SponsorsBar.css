@@ -1,0 +1,98 @@
+/* ===== Sponsors Bar (Global) ===== */
+.sponsors-bar {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid var(--border-light);
+    margin-top: 60px;
+    background: var(--bg-surface);
+}
+
+.sponsors-bar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.sponsors-bar-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sponsors-bar-link {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sponsors-bar-logos img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    mix-blend-mode: multiply;
+}
+
+/* TSLAS logo needs extra size */
+.sponsors-bar-link.sponsor-2 img {
+    width: 230px;
+}
+
+.sponsors-bar-link:hover {
+    transform: scale(1.1);
+}
+
+.sponsors-bar-link:hover img {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 1024px) {
+    .sponsors-bar-logos {
+        gap: 30px;
+    }
+    .sponsors-bar-logos img {
+        width: 150px;
+    }
+    .sponsors-bar-link.sponsor-2 img {
+        width: 190px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+    .sponsors-bar {
+        padding: 35px 15px;
+        margin-top: 40px;
+    }
+    .sponsors-bar-logos {
+        gap: 25px;
+    }
+    .sponsors-bar-logos img {
+        width: 120px;
+    }
+    .sponsors-bar-link.sponsor-2 img {
+        width: 150px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+    .sponsors-bar-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponsors-bar-logos img {
+        width: 140px;
+    }
+    .sponsors-bar-link.sponsor-2 img {
+        width: 170px;
+    }
+}

@@ -4,6 +4,7 @@ import "./Footer.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { conferenceInfo } from "../../data/conferenceData";
+import { Link, useLocation } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -14,6 +15,17 @@ export default function Footer() {
       </section> */}
 
       <section className="footerBottom">
+        <div className="col footerBrand">
+          <Link to="/">
+            <img
+              src="/aidl_logo.png"
+              alt="AIDL-HCSY Logo"
+              className="footerLogo"
+              style={{ height: "4.5rem", width: "auto", background: "white", borderRadius: "8px", padding: "6px" }}
+            />
+          </Link>
+        </div>
+
         <div className="col">
           <nav className="icons" aria-label="Social Media Links">
             <a href="mailto:contact@example.com" aria-label="Email">

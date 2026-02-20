@@ -4,6 +4,7 @@ import { faArrowUpRightFromSquare, faMapMarkerAlt, faChevronLeft, faChevronRight
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Section from "../../Components/Common/Section";
 import PageHero from "../../Components/Common/PageHero";
+import SponsorsBar from "../../Components/Common/SponsorsBar";
 
 const carouselImages = [
     "./3.jpeg",
@@ -104,6 +105,7 @@ export default function Venue() {
                     </div>
                 </Section>
             </div>
+            <SponsorsBar />
         </div>
     );
 }

@@ -13,7 +13,7 @@ import {
 
 import Section from "../Components/Common/Section";
 import MemberCard from "../Components/Common/MemberCard";
-import HeaderSlideshow from "../Components/Header/HeaderSlideShow";
+import HeaderSlideshow from "../Components/Header/HeaderSlideshow";
 import Floater from "./Floater";
 import { conferenceInfo, conferenceThemes, sponsors, keynotes } from "../data/conferenceData";
 
@@ -49,6 +49,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={sponsor.name}
+                className={`sponsor-link sponsor-${sponsor.id}`}
             >
                 <img src={sponsor.logo} alt={sponsor.name} />
             </a>
@@ -83,12 +84,12 @@ export default function Home() {
                             At the heart of {conferenceInfo.name} lies a compelling vision: to harness the power of intelligent technologies not merely for automation or performance, but to reimagine how AI can serve as a catalyst for positive change across domains. From healthcare to governance, education to cybersecurity, the conference invites researchers, practitioners, and policymakers to engage in rich dialogues and share innovations that are not only technically sound but also deeply rooted in human values.
                         </p>
 
-                        <p>
+                        {/* <p>
                             This international gathering draws strength from a strong academic foundation. {conferenceInfo.venue}, ranked among India's top institutions, brings to the table a vibrant research ecosystem, advanced infrastructure, and a legacy of academic excellence. With over 700 active faculty researchers and 200+ doctoral candidates focused on AI and emerging technologies, the institute provides a fertile ground for collaborative exploration and impactful outcomes.
-                        </p>
+                        </p> */}
 
                         <p>
-                            While {conferenceInfo.year + 1} marks the inaugural edition of {conferenceInfo.name} in its full-fledged conference format, the event is built upon the success of an established workshop series. Since 2018, the AIDL-HCSY workshops have been held annually in conjunction with the International Congress on Ultra Modern Telecommunications and Control Systems. These workshops have served as incubators for scholarly exchange and interdisciplinary collaboration, bringing together global voices to examine the role of AI in enhancing human experience. They addressed critical themes such as human-computer interaction, AI ethics, mental health, and smart urban systems laying the groundwork for this grander, more expansive version.
+                            While {conferenceInfo.year} marks the inaugural edition of {conferenceInfo.name} in its full-fledged conference format, the event is built upon the success of an established workshop series. Since 2018, the AIDL-HCSY workshops have been held annually in conjunction with the International Congress on Ultra Modern Telecommunications and Control Systems (ICUMT). These workshops have served as incubators for scholarly exchange and interdisciplinary collaboration, bringing together global voices to examine the role of AI in enhancing human experience. They addressed critical themes such as human-computer interaction, AI ethics, mental health, and smart urban systems laying the groundwork for this grander, more expansive version.
                         </p>
                     </section>
 
@@ -117,6 +118,12 @@ export default function Home() {
                                     </div>
                                 </MemberCard>
                             ))}
+                        </div>
+                    </Section>
+
+                    <Section title="Important Dates" variant="block">
+                        <div className="important-dates-image-container" style={{ display: 'flex', justifyContent: 'center' }}>
+                            <img src="./Impdates.png" alt="Important Dates" style={{ maxWidth: '400px', width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }} />
                         </div>
                     </Section>
 

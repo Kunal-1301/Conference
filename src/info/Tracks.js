@@ -5,7 +5,7 @@ var tracks = [
     chairs: [
       {
         name: "Dr. Ashwani Sharma",
-        des: "IIT Ropar, India"
+        des: "Indian Institute of Technology Ropar, India"
       }
     ]
   },
@@ -25,7 +25,7 @@ var tracks = [
     chairs: [
       {
         name: "Dr Mudit Gupta",
-        des: "CEO, Saral Diagnostics"
+        des: "Saral Diagnostics, India"
       }
     ]
   },
@@ -35,11 +35,11 @@ var tracks = [
     chairs: [
       {
         name: "Prof. Prabin Kumar Padhy",
-        des: "IITDM, Jabalpur, India"
+        des: "Indian Institute of Information Technology Design and Manufacturing Jabalpur, India"
       },
       {
         name: "Dr. Sachin Kumar Jain",
-        des: "IITDM, Jabalpur, India"
+        des: "Indian Institute of Information Technology Design and Manufacturing Jabalpur, India"
       }
     ]
   },
@@ -49,11 +49,11 @@ var tracks = [
     chairs: [
       {
         name: "Prof. Kulbir Singh",
-        des: "TIET, Patiala, India"
+        des: "Thapar Institute of Engineering and Technology, Patiala, India"
       },
       {
         name: "Dr. Vinay Kumar Vakharia",
-        des: "PDEU, Gandhinagar, India"
+        des: "Pandit Deendayal Energy University, Gandhinagar, India"
       }
     ]
   },
@@ -63,7 +63,7 @@ var tracks = [
     chairs: [
       {
         name: "Prof. Mandeep Singh",
-        des: "TIET, Patiala, India"
+        des: "Thapar Institute of Engineering and Technology, Patiala, India"
       }
     ]
   }

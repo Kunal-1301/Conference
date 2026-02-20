@@ -28,7 +28,7 @@ export default function Header() {
     <nav className={`navbar ${scrolled || !isHome ? 'navbar-solid' : 'navbar-transparent'}`}>
       <div className="navbarInner">
         <Link to="/" className="navBrand">
-          AIDL-HCSY 2027
+          <img src="/aidl_logo.png" alt="AIDL-HCSY Logo" className="navLogo" style={{ height: "3.5rem", width: "auto" }} />
         </Link>
 
         <button
@@ -46,7 +46,7 @@ export default function Header() {
           <li className="dropdown">
             <span>About Us <FontAwesomeIcon icon={faCaretDown} /></span>
             <ul className="dropdown-menu">
-              <li><Link to="/about-thapar">About Thapar</Link></li>
+              <li><Link to="/about-thapar">About TIET</Link></li>
               <li><Link to="/about-patiala">About Patiala</Link></li>
             </ul>
           </li>

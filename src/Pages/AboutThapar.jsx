@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../Components/Common/Section';
 import PageHero from '../Components/Common/PageHero';
+import SponsorsBar from '../Components/Common/SponsorsBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullseye, faUniversity, faAward, faGlobeAsia, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import './About.css';
@@ -41,7 +42,7 @@ const AboutThapar = () => {
     return (
         <div className="aboutPage">
             <PageHero
-                title="About Thapar Institute"
+                title="About TIET"
                 subtitle="A Legacy of Engineering Excellence Since 1956"
                 backgroundImage="/thapar1.jpg"
             />
@@ -90,13 +91,14 @@ const AboutThapar = () => {
                         </div>
                         <div className="missionVisual">
                             <div className="imageWrapper">
-                                <img src="/thapar2.jpg" alt="Thapar students collaboration" />
+                                <img src="/home.jpg" alt="Thapar students collaboration" />
                                 <div className="imageOverlay"></div>
                             </div>
                         </div>
                     </div>
                 </Section>
             </div>
+            <SponsorsBar />
         </div>
     );
 };
