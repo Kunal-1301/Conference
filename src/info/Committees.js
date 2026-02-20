@@ -58,6 +58,7 @@ const committeeData = {
                 { name: 'Prof Dwarka Nath Rath', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
                 { name: 'Prof Rajashri Khanai', img: './dummy.jpg', position: 'KLE Technological University, Belagavi Campus, India' },
                 { name: 'Dr Karun Verma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
+                { name: 'Prof. Kulbir Singh', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
             ],
         },
         // {

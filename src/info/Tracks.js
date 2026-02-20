@@ -37,23 +37,24 @@ var tracks = [
         name: "Prof. Prabin Kumar Padhy",
         des: "Indian Institute of Information Technology Design and Manufacturing Jabalpur, India"
       },
-      {
-        name: "Dr. Sachin Kumar Jain",
-        des: "Indian Institute of Information Technology Design and Manufacturing Jabalpur, India"
-      }
+      
     ]
   },
   {
     title: "Intelligent Control, Robotics, and Autonomous Systems",
     sub: "Adaptive/robust control, cooperative/optimal/motion control, AI-based control systems.",
     chairs: [
+      // {
+      //   name: "Prof. Kulbir Singh",
+      //   des: "Thapar Institute of Engineering and Technology, Patiala, India"
+      // },
+      // {
+      //   name: "Dr. Vinay Kumar Vakharia",
+      //   des: "Pandit Deendayal Energy University, Gandhinagar, India"
+      // }
       {
-        name: "Prof. Kulbir Singh",
-        des: "Thapar Institute of Engineering and Technology, Patiala, India"
-      },
-      {
-        name: "Dr. Vinay Kumar Vakharia",
-        des: "Pandit Deendayal Energy University, Gandhinagar, India"
+        name: "Dr. Sachin Kumar Jain",
+        des: "Indian Institute of Information Technology Design and Manufacturing Jabalpur, India"
       }
     ]
   },
@@ -62,7 +63,7 @@ var tracks = [
     sub: "Business model canvas, entrepreneurial opportunities, development of human-centric solutions.",
     chairs: [
       {
-        name: "Prof. Mandeep Singh",
+        name: "Dr. Mandeep Singh",
         des: "Thapar Institute of Engineering and Technology, Patiala, India"
       }
     ]

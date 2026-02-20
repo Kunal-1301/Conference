@@ -79,10 +79,10 @@ export default function Venue() {
                                 title="TIET Patiala Location"
                             ></iframe>
                         </div>
-                        <div className="mapWrapper worldMap">
+                        {/* <div className="mapWrapper worldMap">
                             <img src="./London.png" alt="World Map Location" />
                             <p className="worldMapHint">Patiala, India</p>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="transportGrid">
