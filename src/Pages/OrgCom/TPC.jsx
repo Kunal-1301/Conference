@@ -23,7 +23,7 @@ export default function TPC() {
                                 </div>
 
                                 <div className="trackChairs">
-                                    <h4>Track Chairs</h4>
+                                    <h4>Theme Chairs</h4>
                                     <div>
                                         {
                                             track.chairs.map((chair, index) => (

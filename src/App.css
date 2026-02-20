@@ -86,7 +86,7 @@ a {
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 5vw;
-  text-align: left; /* Reset from justify for better readability on web */
+  text-align: justify;
 }
 
 /* Button Styles */

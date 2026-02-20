@@ -3,7 +3,7 @@ const committeeData = {
         {
             title: 'Chief Patron',
             members: [
-                { name: 'Dr RR Vaderea', img: './dummy.jpg', position: 'Chancellor, Thapar Institute of Engineering and Technology (TIET), Patiala.' },
+                { name: 'Dr Rajeev Ranjan Vederah', img: './dummy.jpg', position: 'Chancellor, Thapar Institute of Engineering and Technology (TIET), Patiala, India' },
             ],
         },
         {
@@ -30,29 +30,29 @@ const committeeData = {
             title: 'Organising Chairs',
             members: [
                 { name: 'Dr Rahul Upadhyay', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
-                { name: 'Dr Mohammed Usman', img: './dummy.jpg', position: 'Bennett University' },
+                { name: 'Dr Mohammed Usman', img: './dummy.jpg', position: 'Bennett University, Noida, India' },
             ],
         },
         {
             title: 'Organizing Secretary',
             members: [
-                { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology' },
+                { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
             ],
         },
         {
             title: 'Steering Committee',
             members: [
                 { name: 'Prof R S Kaler', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
-                { name: 'Dr Meenakshi Sood', img: './dummy.jpg', position: 'NITTTR, Chandigarh' },
+                { name: 'Dr Meenakshi Sood', img: './dummy.jpg', position: 'National Institute of Technical Teachers Training and Research, Chandigarh, India' },
                 { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
-                { name: 'Prof (retd) Sunil Bhooshan', img: './dummy.jpg', position: 'Mahindra University, Hyderabad' },
+                { name: 'Prof (retd) Sunil Bhooshan', img: './dummy.jpg', position: 'Mahindra University, Hyderabad, India' },
             ],
         },
         {
             title: 'Advisory Committee',
             members: [
-                { name: 'Prof Rajesh Dikshit', img: './dummy.jpg', position: 'NITTTR, Bhopal' },
-                { name: 'Prof. Omar Farooq', img: './dummy.jpg', position: 'Aligarh Muslim University, Patiala, India' },
+                { name: 'Prof Rajesh Dikshit', img: './dummy.jpg', position: 'National Institute of Technical Teachers Training and Research, Bhopal, India' },
+                { name: 'Prof Omar Farooq', img: './dummy.jpg', position: 'Aligarh Muslim University, Patiala, India' },
                 { name: 'Dr Mudit Gupta', img: './dummy.jpg', position: 'Saral Diagnostics, Delhi, India' },
                 { name: 'Prof Sandeep Sharma', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
                 { name: 'Prof Dwarka Nath Rath', img: './dummy.jpg', position: 'Thapar Institute of Engineering and Technology, Patiala, India' },
@@ -80,7 +80,7 @@ const committeeData = {
             members: [
                 { name: 'Sh. Pankaj Sinha', img: './dummy.jpg', position: 'Chair: Finance Officer, Thapar Institute of Engineering and Technology, Patiala, India' },
                 { name: 'Dr Shashikant', img: './dummy.jpg', position: 'Member: Thapar Institute of Engineering and Technology, Patiala, India' },
-                { name: 'Dr Arun Chaterjee', img: './dummy.jpg', position: 'Member: Thapar Institute of Engineering and Technology, Patiala, India' },
+                { name: 'Dr Arun Chatterjee', img: './dummy.jpg', position: 'Member: Thapar Institute of Engineering and Technology, Patiala, India' },
             ],
         },
         {
