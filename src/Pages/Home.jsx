@@ -13,7 +13,7 @@ import {
 
 import Section from "../Components/Common/Section";
 import MemberCard from "../Components/Common/MemberCard";
-import HeaderSlideshow from "../Components/Header/HeaderSlideshow";
+import HeaderSlideshow from "../Components/Header/HeaderSlideShow";
 import Floater from "./Floater";
 import { conferenceInfo, conferenceThemes, sponsors, keynotes } from "../data/conferenceData";
 

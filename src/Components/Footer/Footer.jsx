@@ -4,7 +4,7 @@ import "./Footer.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { conferenceInfo } from "../../data/conferenceData";
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
